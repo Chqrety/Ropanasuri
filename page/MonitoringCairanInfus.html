@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropanasuri | Monitoring Cairan Infus</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body class="p-9">
+    <header class="flex items-center pl-10 pb-7 gap-x-5">
+        <img src="/img/logo.png" alt="" class="w-24 h-24 object-contain">
+        <span class="font-bold text-3xl text-center w-full uppercase">Monitoring Cairan Infus</span>
+    </header>
+
+    <main>
+        <section>
+            <table class="w-full">
+                <thead>
+                    <tr class="text-center font-semibold">
+                        <td class="border border-black py-3">
+                            <p>Tanggal & jam</p>
+                        </td>
+                        <td class="border border-black w-2/12">
+                            <p>Order Dokter</p>
+                        </td>
+                        <td class="border border-black">
+                            <p>Jenis Cairan</p>
+                        </td>
+                        <td class="border border-black">
+                            <p>Botol Ke</p>
+                        </td>
+                        <td class="border border-black">
+                            <p>Tetes/Menit</p>
+                        </td>
+                        <td class="border border-black">
+                            <p>Dimulai jam</p>
+                        </td>
+                        <td class="border border-black">
+                            <p>Habis jam</p>
+                        </td>
+                        <td class="border border-black">
+                            <p>Nama Perawat</p>
+                        </td>
+                        <td class="border border-black">
+                            <p>Keterangan</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- layout html
+                    <td class="border border-black"><input type="text" class="w-full"></td> -->
+                    <script>
+                        for (var j = 0; j < 35; j++) {
+                            document.write('<tr>');
+
+                            for (var i = 0; i < 9; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+
+                            document.write('</tr>');
+                        }
+                    </script>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
