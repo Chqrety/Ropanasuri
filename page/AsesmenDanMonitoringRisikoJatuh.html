@@ -15,29 +15,568 @@
     </header>
 
     <main class="grid grid-cols-10 gap-x-3">
-        <section class="border border-black col-span-3">
-            <p class="text-center font-bold uppercase">Asesmen risiko jatuh morse fall scale <br> pada pasien dewasa
-                usia > 12 sampai usia 65 tahun</p>
-            <p>Keterangan :</p>
-            <div class="grid grid-cols-2">
-                <p>1. Risiko Rendah</p>
-                <p>: 0 - 24</p>
-                <p class="col-start-1">2. Risiko Sedang</p>
-                <p>: 25 - 44</p>
-                <p class="col-start-1">3. Risiko Tinggi</p>
-                <p>: &ge; 44</p>
+        <!-- table kiri -->
+        <section class="border border-black col-span-3 h-fit">
+            <div class="p-2">
+                <p class="text-center font-bold uppercase">Asesmen risiko jatuh morse fall scale <br> pada pasien dewasa
+                    usia > 12 sampai usia 65 tahun</p>
+                <p>Keterangan :</p>
+                <div class="grid grid-cols-2 gap-x-2 w-fit">
+                    <p>1. Risiko Rendah</p>
+                    <p>: 0 - 24</p>
+                    <p class="col-start-1">2. Risiko Sedang</p>
+                    <p>: 25 - 44</p>
+                    <p class="col-start-1">3. Risiko Tinggi</p>
+                    <p>: &ge; 44</p>
+                </div>
             </div>
-            <table border="1" class="table-auto row-start-2">
+            <table border="1" class="table-auto w-full">
                 <thead>
                     <tr class="border-y border-black">
-                        <th rowspan="3" colspan="3" class="border-r border-black">Faktor Risiko</th>
-                        <th rowspan="3" colspan="5" class="border-x border-black">Skala</th>
-                        <td class="border-x border-black">Tgl</td>
+                        <th rowspan="3" class="border-r border-black uppercase w-3/12">Faktor Risiko</th>
+                        <th rowspan="3" class="border-x border-black uppercase w-5/12">Skala</th>
+                        <div class="w-4/12">
+                            <td class="border-x border-black">Tgl</td>
+                            <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8"></td> -->
+                            <script>
+                                for (var i = 0; i < 5; i++) {
+                                    var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                    document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td class="border-x border-black">*</td>
+                        <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr class="border-y border-black">
+                        <!-- layout html
+                        <td class="text-xs border-x border-black">SKOR</td> -->
+                        <script>
+                            for (var i = 0; i < 6; i++) {
+                                var borderClass = (i === 6 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="text-xs ' + borderClass + ' border-black">SKOR</td>');
+                            }
+                        </script>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- riwayat jatuh -->
+                    <tr class="border-t border-black">
+                        <td class="border-r border-black align-top font-semibold">
+                            <p class="p-1">Riwayat Jatuh</p>
+                        </td>
+                        <td class="border-x border-black font-semibold align-top">
+                            <p class="font-semibold">Tidak</p>
+                            <p class="font-semibold">Ya</p>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-top">
+                            <p class="font-semibold">0</p>
+                            <p class="font-semibold">25</p>
+                        </td>
+                        <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8 h-24"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8 h-24"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-24"></td>');
+                            }
+                        </script>
+                    </tr>
+
+                    <!-- diagnosa sekunder -->
+                    <tr class="border-t border-black">
+                        <td class="border-r border-black align-top font-semibold">
+                            <p class="p-1">Diagnosa Sekunder</p>
+                        </td>
+                        <td class="border-x border-black font-semibold align-top">
+                            <p class="font-semibold">Tidak</p>
+                            <p class="font-semibold">Ya</p>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-top">
+                            <p class="font-semibold">0</p>
+                            <p class="font-semibold">25</p>
+                        </td>
+                        <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8 h-20"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8 h-20"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-20"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <!-- menggunakan alat bantu -->
+                    <tr class="border-t border-black">
+                        <td class="border-r border-black align-top text-sm font-semibold">
+                            <p class="p-1">Menggunanakan Alat Bantu</p>
+                        </td>
+                        <td class="border-x border-black text-xs font-semibold align-middle px-2">
+                            <p class="font-semibold py-1">Tidak ada/bedrest/dibantu perawat</p>
+                            <p class="font-semibold py-1">Kruk/tongkat</p>
+                            <p class="font-semibold py-1">Kursi/perabot</p>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-middle">
+                            <p class="font-semibold">0</p>
+                            <p class="font-semibold">25</p>
+                            <p class="font-semibold">30</p>
+                        </td>
+                        <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8 h-28"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8 h-28"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-28"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <!-- Menggunakan Infus / Heparin / Pengecer Darah -->
+                    <tr class="border-t border-black">
+                        <td class="border-r border-black align-top text-sm font-semibold">
+                            <p class="p-1">Menggunakan Infus / Heparin / Pengecer Darah</p>
+                        </td>
+                        <td class="border-x border-black font-semibold align-top px-2">
+                            <p class="font-semibold">Tidak</p>
+                            <p class="font-semibold">Ya</p>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-top">
+                            <p class="font-semibold">0</p>
+                            <p class="font-semibold">20</p>
+                        </td>
+                        <!-- layout html
+                            <td class="border-x border-black"><input type="text" class="w-8 h-20"></td>
+                            jika berada di cols terakhir
+                            <td class="border-l border-black"><input type="text" class="w-8 h-20"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-20"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <!-- Gaya Berjalan -->
+                    <tr class="border-t border-black">
+                        <td class="border-r border-black align-top text-sm font-semibold">
+                            <p class="p-1">Gaya Berjalan</p>
+                        </td>
+                        <td class="border-x border-black text-sm font-semibold align-top px-2">
+                            <p class="font-semibold">Normal/Bedrest/Kursi Roda</p>
+                            <p class="font-semibold">Lemah</p>
+                            <p class="font-semibold">Terganggu</p>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-top">
+                            <p class="font-semibold">0</p>
+                            <p class="font-semibold">10</p>
+                            <p class="font-semibold">20</p>
+                        </td>
+                        <!-- layout html
+                                <td class="border-x border-black"><input type="text" class="w-8 h-24"></td>
+                                jika berada di cols terakhir
+                                <td class="border-l border-black"><input type="text" class="w-8 h-24"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-24"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <!-- status mental -->
+                    <tr class="border-t border-black">
+                        <td class="border-r border-black align-top text-sm font-semibold">
+                            <p class="p-1">Status Mental</p>
+                        </td>
+                        <td class="border-x border-black font-semibold align-top">
+                            <p class="font-semibold">Menyadari kemampuan</p>
+                            <p class="font-semibold">Lupa akan keterbatasan / pelupa</p>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-top">
+                            <p class="font-semibold">0</p>
+                            <p class="font-semibold">15</p>
+                        </td>
+                        <!-- layout html
+                                    <td class="border-x border-black"><input type="text" class="w-8 h-36"></td>
+                                    jika berada di cols terakhir
+                                    <td class="border-l border-black"><input type="text" class="w-8 h-36"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-36"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <!-- total skor -->
+                    <tr class="border-y border-black">
+                        <td colspan="3" class="uppercase font-bold px-1">Total Skor</td>
+                        <!-- layout html
+                    <td class="border-x border-black"><input type="text" class="w-8"></td>
+                    jika berada di cols terakhir
+                    <td class="border-l border-black"><input type="text" class="w-8"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <!-- nilai skor -->
+                    <tr class="border-y border-black">
+                        <td colspan="3" class="font-bold px-1">Nilai Skor (RR/RS/RT)</td>
+                        <!-- layout html
+                    <td class="border-x border-black"><input type="text" class="w-8"></td>
+                    jika berada di cols terakhir
+                    <td class="border-l border-black"><input type="text" class="w-8"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <!-- nama perawat -->
+                    <tr class="border-y border-black">
+                        <td colspan="2" class="font-bold px-1">Nama Perawat (Inisial)</td>
+                        <!-- layout html
+                    <td class="border-x border-black"><input type="text" class="w-8"></td>
+                    jika berada di cols terakhir
+                    <td class="border-l border-black"><input type="text" class="w-8"></td> -->
+                        <script>
+                            for (var i = 0; i < 6; i++) {
+                                var borderClass = (i === 6 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <!-- paraf -->
+                    <tr class="border-t border-black">
+                        <td colspan="2" class="font-bold">Paraf</td>
+                        <!-- layout html
+                    <td class="border-x border-black"><input type="text" class="w-8"></td>
+                    jika berada di cols terakhir
+                    <td class="border-l border-black"><input type="text" class="w-8"></td> -->
+                        <script>
+                            for (var i = 0; i < 6; i++) {
+                                var borderClass = (i === 6 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                            }
+                        </script>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- table tengah -->
+        <section class="border border-black col-span-2 h-fit">
+            <div class="p-2">
+                <p class="text-center font-bold uppercase">Asesmen risiko jatuh hendrich scale <br> pada pasien usia >65
+                    tahun</p>
+                <p class="italic font-semibold">Keterangan :</p>
+                <div class="grid grid-cols-2 font-semibold gap-x-2 w-fit">
+                    <p>1. Risiko Rendah</p>
+                    <p>: 0 - 7</p>
+                    <p class="col-start-1">2. Risiko Sedang</p>
+                    <p>: 8 - 13</p>
+                    <p class="col-start-1">3. Risiko Tinggi</p>
+                    <p>: &ge; 14</p>
+                </div>
+            </div>
+            <table border="1" class="table-auto w-full">
+                <thead>
+                    <tr class="border-y border-black w-full">
+                        <th rowspan="3" class="border-r border-black uppercase w-6/12">Faktor Risiko</th>
+                        <th rowspan="3" class="border-x border-black uppercase w-2/12">Skala</th>
+                        <div class="w-4/12">
+                            <td class="border-x border-black">Tgl</td>
+                            <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8"></td> -->
+                            <script>
+                                for (var i = 0; i < 5; i++) {
+                                    var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                    document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td class="border-x border-black">*</td>
+                        <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr class="border-y border-black">
+                        <!-- layout html
+                        <td class="text-xs border-x border-black">SKOR</td> -->
+                        <script>
+                            for (var i = 0; i < 6; i++) {
+                                var borderClass = (i === 6 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="text-xs ' + borderClass + ' border-black">SKOR</td>');
+                            }
+                        </script>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Riwayat Jatuh Akhir Akhir Ini -->
+                    <tr class="border-t border-black">
+                        <td class="border-r border-black text-sm font-semibold align-top">
+                            <p class="p-1">Riwayat Jatuh Akhir Akhir Ini</p>
+                        </td>
+                        <td class="border-x border-black font-semibold align-top">
+                            <p class="font-semibold">Tidak</p>
+                            <p class="font-semibold">Ya</p>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-top">
+                            <p class="font-semibold">0</p>
+                            <p class="font-semibold">7</p>
+                        </td>
+                        <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8 h-24"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8 h-24"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-24"></td>');
+                            }
+                        </script>
+                    </tr>
+
+                    <!-- Perubahan Berkemih (Inkontinensia, Nokturia) -->
+                    <tr class="border-t border-black">
+                        <td class="border-r border-black text-xs font-semibold align-top">
+                            <p class="p-1">Perubahan Berkemih (Inkontinensia, Nokturia)</p>
+                        </td>
+                        <td class="border-x border-black font-semibold align-top">
+                            <p class="font-semibold">Tidak</p>
+                            <p class="font-semibold">Ya</p>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-top">
+                            <p class="font-semibold">0</p>
+                            <p class="font-semibold">3</p>
+                        </td>
+                        <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8 h-20"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8 h-20"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-20"></td>');
+                            }
+                        </script>
+                    </tr>
+
+                    <!-- Kebingungan/Disorientasi -->
+                    <tr class="border-t border-black">
+                        <td class="border-r border-black text-xs font-semibold align-top">
+                            <p class="p-1">Kebingungan / Disorientasi</p>
+                        </td>
+                        <td class="border-x border-black font-semibold align-top">
+                            <p class="font-semibold">Tidak</p>
+                            <p class="font-semibold">Ya</p>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-top">
+                            <p class="font-semibold">0</p>
+                            <p class="font-semibold">3</p>
+                        </td>
+                        <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8 h-28"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8 h-28"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-28"></td>');
+                            }
+                        </script>
+                    </tr>
+
+                    <!-- Depresi -->
+                    <tr class="border-t border-black">
+                        <td class="border-r border-black text-xs font-semibold align-top">
+                            <p class="p-1">Depresi</p>
+                        </td>
+                        <td class="border-x border-black font-semibold align-top">
+                            <p class="font-semibold">Tidak</p>
+                            <p class="font-semibold">Ya</p>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-top">
+                            <p class="font-semibold">0</p>
+                            <p class="font-semibold">4</p>
+                        </td>
+                        <!-- layout html
+                            <td class="border-x border-black"><input type="text" class="w-8 h-20"></td>
+                            jika berada di cols terakhir
+                            <td class="border-l border-black"><input type="text" class="w-8 h-20"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-20"></td>');
+                            }
+                        </script>
+                    </tr>
+
+                    <!-- Pusing / Vertigo -->
+                    <tr class="border-t border-black">
+                        <td class="border-r border-black text-xs font-semibold align-top">
+                            <p class="p-1">Pusing / Vertigo</p>
+                        </td>
+                        <td class="border-x border-black font-semibold align-top">
+                            <p class="font-semibold">Tidak</p>
+                            <p class="font-semibold">Ya</p>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-top">
+                            <p class="font-semibold">0</p>
+                            <p class="font-semibold">3</p>
+                        </td>
+                        <!-- layout html
+                                <td class="border-x border-black"><input type="text" class="w-8 h-24"></td>
+                                jika berada di cols terakhir
+                                <td class="border-l border-black"><input type="text" class="w-8 h-24"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-24"></td>');
+                            }
+                        </script>
+                    </tr>
+
+                    <!-- Keterbatasan Mobilitas / Kelemahan Tubuh -->
+                    <tr class="border-t border-black">
+                        <td class="border-r border-black text-xs font-semibold align-top">
+                            <p class="p-1">Keterbatasan Mobilitas / Kelemahan Tubuh</p>
+                            <p class="p-1">Penilaian Buruk (jika tidak kebingungan)</p>
+                        </td>
+                        <td class="border-x border-black font-semibold align-top">
+                            <p class="font-semibold">Tidak</p>
+                            <p class="font-semibold">Ya</p>
+                            <p class="font-semibold pt-6">Tidak</p>
+                            <p class="font-semibold">Ya</p>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-top">
+                            <p class="font-semibold">0</p>
+                            <p class="font-semibold">2</p>
+                            <p class="font-semibold pt-6">0</p>
+                            <p class="font-semibold">3</p>
+                        </td>
+                        <!-- layout html
+                                    <td class="border-x border-black"><input type="text" class="w-8 h-36"></td>
+                                    jika berada di cols terakhir
+                                    <td class="border-l border-black"><input type="text" class="w-8 h-36"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-36"></td>');
+                            }
+                        </script>
+                    </tr>
+
+                    <!-- total skor -->
+                    <tr class="border-y border-black">
+                        <td colspan="3" class="uppercase font-bold px-1">Total Skor</td>
+                        <!-- layout html
                         <td class="border-x border-black"><input type="text" class="w-8"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <!-- nilai skor -->
+                    <tr class="border-y border-black">
+                        <td colspan="3" class="font-bold px-1">Nilai Skor (RR/RS/RT)</td>
+                        <!-- layout html
                         <td class="border-x border-black"><input type="text" class="w-8"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <!-- nama perawat -->
+                    <tr class="border-y border-black">
+                        <td colspan="3" class="font-bold px-1">Nama Perawat (Inisial)</td>
+                        <!-- layout html
                         <td class="border-x border-black"><input type="text" class="w-8"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <!-- paraf -->
+                    <tr class="border-t border-black">
+                        <td colspan="3" class="font-bold">Paraf</td>
+                        <!-- layout html
                         <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-l border-black"><input type="text" class="w-8"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8"></td> -->
+                        <script>
+                            for (var i = 0; i < 5; i++) {
+                                var borderClass = (i === 5 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                            }
+                        </script>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- table kanan -->
+        <section class="border border-black col-span-5 h-fit">
+            <div class="p-2">
+                <p class="text-center font-bold uppercase">Asesmen risiko jatuh humpty dumpty scale <br> pada pasien
+                    usia
+                    &le; 12 tahun</p>
+                <p class="italic font-semibold">Keterangan :</p>
+                <div class="grid grid-cols-2 font-semibold w-fit">
+                    <p class="col-span-2">1. Skor minimum 7, maksimum 23</p>
+                    <p class="col-start-1">2. Skor 7-11</p>
+                    <p>: Risiko Rendah</p>
+                    <p class="col-start-1">3. Skor > 12</p>
+                    <p>: Risiko Tinggi</p>
+                </div>
+            </div>
+            <table border="1" class="table-auto w-full">
+                <thead>
+                    <tr class="border-y border-black">
+                        <th rowspan="3" class="border-r border-black uppercase w-3/12">Parameter</th>
+                        <th rowspan="3" class="border-x border-black uppercase w-6/12">Kriteria</th>
+                        <th rowspan="3" class="border-x border-black uppercase w-1/12">Skala</th>
+                        <div class="w-4/12">
+                            <td class="border-x border-black">Tgl</td>
+                            <td class="border-x border-black"><input type="text" class="w-8"></td>
+                            <td class="border-x border-black"><input type="text" class="w-8"></td>
+                            <td class="border-x border-black"><input type="text" class="w-8"></td>
+                            <td class="border-x border-black"><input type="text" class="w-8"></td>
+                            <td class="border-l border-black"><input type="text" class="w-8"></td>
+                        </div>
                     </tr>
                     <tr>
                         <td class="border-x border-black">*</td>
@@ -47,7 +586,7 @@
                         <td class="border-x border-black"><input type="text" class="w-8"></td>
                         <td class="border-l border-black"><input type="text" class="w-8"></td>
                     </tr>
-                    <tr>
+                    <tr class="border-t border-black">
                         <td class="text-xs border-x border-black">SKOR</td>
                         <td class="text-xs border-x border-black">SKOR</td>
                         <td class="text-xs border-x border-black">SKOR</td>
@@ -57,256 +596,257 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- riwayat jatuh -->
+                    <!-- Usia -->
                     <tr class="border-t border-black">
-                        <td rowspan="4" colspan="3" class="border-x border-black align-top">Riwayat Jatuh</th>
-                        <td colspan="5" class="text-xs border-x border-black">Tidak</td>
-                        <td class="border-x border-black">0</td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" rowspan="3" class="text-xs border-x border-black align-top">Ya</td>
-                        <td rowspan="3" class="border-x border-black align-top">25</td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                    </tr>
-                    <tr>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                    </tr>
-                    <tr class="border-b border-black">
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                    </tr>
-                    <!-- diagnosa sekunder -->
-                    <tr class="border-t border-black">
-                        <td rowspan="2" colspan="3" class="border-x border-black align-top">Diagnosa Sekunder</th>
-                        <td colspan="5" class="text-xs border-x border-black">Tidak</td>
-                        <td class="border-x border-black">0</td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type=" text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                    </tr>
-                    <tr class="border-b border-black">
-                        <td colspan="5" class="text-xs border-x border-black align-top">Ya</td>
-                        <td class="border-x border-black align-top">25</td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                    </tr>
-                    <!-- menggunakan alat bantu -->
-                    <tr class="border-t border-black">
-                        <td rowspan="3" colspan="3" class="border-x border-black align-top text-sm">Menggunanakan Alat
-                            Bantu
+                        <td class="border-r border-black text-sm font-semibold align-top">
+                            <p class="p-1">Usia</p>
                         </td>
-                        <td colspan="5" class="text-xs border-x border-black">Tidak ada/bedrest/dibantu perawat</td>
-                        <td class="border-x border-black">0</td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
+                        <td class="border-x border-black font-semibold px-2">
+                            <div class="flex-row">
+                                <p class="font-semibold">&lt; 3 Tahun</p>
+                                <p class="font-semibold">3 - 7 tahun</p>
+                                <p class="font-semibold">7 -12 tahun</p>
+                                <p class="font-semibold">&gt; 12 tahun</p>
+                            </div>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center">
+                            <p class="font-semibold">4</p>
+                            <p class="font-semibold">3</p>
+                            <p class="font-semibold">2</p>
+                            <p class="font-semibold">1</p>
+                        </td>
+                        <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8 h-24"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8 h-24"></td> -->
+                        <script>
+                            for (var i = 0; i < 6; i++) {
+                                var borderClass = (i === 6 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-24"></td>');
+                            }
+                        </script>
                     </tr>
-                    <tr>
-                        <td colspan="5" class="text-xs border-x border-black">Kruk/Tongkat</td>
-                        <td class="border-x border-black">25</td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                    </tr>
-                    <tr class="border-b border-black">
-                        <td colspan="5" class="text-xs border-x border-black">Kursi/Perabot</td>
-                        <td class="border-x border-black">30</td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                    </tr>
-                    <!-- Menggunakan Infus / Heparin / Pengecer Darah -->
+
+                    <!-- Jenis Kelamin -->
                     <tr class="border-t border-black">
-                        <td rowspan="2" colspan="3" class="border-x border-black align-top text-xs">Menggunakan Infus /
-                            Heparin / Pengecer Darah</td>
-                        <td colspan="5" class="text-xs border-x border-black">Tidak</td>
-                        <td class="border-x border-black">0</td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
+                        <td class="border-r border-black text-sm font-semibold align-top">
+                            <p class="p-1">Jenis Kelamin</p>
+                        </td>
+                        <td class="border-x border-black font-semibold px-2 align-top">
+                            <div class="flex-row">
+                                <p class="font-semibold">Laki - Laki</p>
+                                <p class="font-semibold">Perempuan</p>
+                            </div>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-top">
+                            <p class="font-semibold">2</p>
+                            <p class="font-semibold">1</p>
+                        </td>
+                        <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8 h-20"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8 h-20"></td> -->
+                        <script>
+                            for (var i = 0; i < 6; i++) {
+                                var borderClass = (i === 6 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-20"></td>');
+                            }
+                        </script>
                     </tr>
-                    <tr class="border-b border-black">
-                        <td colspan="5" class="text-xs border-x border-black">Ya</td>
-                        <td class="border-x border-black">20</td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                    </tr>
-                    <!-- Gaya Berjalan -->
+
+                    <!-- diagnosis -->
                     <tr class="border-t border-black">
-                        <td rowspan="4" colspan="3" class="border-x border-black align-top text-sm">Gaya Berjalan</td>
-                        <td colspan="5" class="text-xs border-x border-black">Normal/Bedrest/Kursi Roda</td>
-                        <td class="border-x border-black">0</td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
+                        <td class="border-r border-black text-sm font-semibold align-top">
+                            <p class="p-1">Diagnosis</p>
+                        </td>
+                        <td class="border-x border-black font-semibold px-2">
+                            <div class="flex-row text-xs">
+                                <p class="font-semibold">Diagnosis Neurologi (riwayat demam tinggi, kejang)</p>
+                                <p class="font-semibold">Perubahan oksigenasi (diagnosis respiratorik, dehidrasi,
+                                    anemia, anokreksia, sinkop, pusing)</p>
+                                <p class="font-semibold">Gangguan perilaku / psikiatri</p>
+                                <p class="font-semibold">Diagnosis lainnya</p>
+                            </div>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center">
+                            <p class="font-semibold pt-2">4</p>
+                            <p class="font-semibold pb-2">3</p>
+                            <p class="font-semibold">2</p>
+                            <p class="font-semibold">1</p>
+                        </td>
+                        <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8 h-28"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8 h-28"></td> -->
+                        <script>
+                            for (var i = 0; i < 6; i++) {
+                                var borderClass = (i === 6 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-28"></td>');
+                            }
+                        </script>
                     </tr>
-                    <tr>
-                        <td colspan="5" class="text-xs border-x border-black">Lemah</td>
-                        <td class="border-x border-black">10</td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2" colspan="5" class="text-xs border-x border-black align-top">Terganggu</td>
-                        <td rowspan="2" class="border-x border-black align-top">20</td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                    </tr>
-                    <tr class="border-b border-black">
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                    </tr>
-                    <!-- status mental -->
+
+                    <!-- gangguan kognitif -->
                     <tr class="border-t border-black">
-                        <td rowspan="5" colspan="3" class="border-x border-black align-top text-sm">Status Mental</td>
-                        <td colspan="5" class="text-xs border-x border-black">Menyadari kemampuan</td>
-                        <td class="border-x border-black">0</td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
+                        <td class="border-r border-black text-sm font-semibold align-top">
+                            <p class="p-1">Gangguan Kognitif</p>
+                        </td>
+                        <td class="border-x border-black font-semibold px-2">
+                            <div class="flex-row text-sm">
+                                <p class="font-semibold">Tidak menyadari keterbatasan diri</p>
+                                <p class="font-semibold">Lupa akan terhadap adanya keterbatasan</p>
+                                <p class="font-semibold">Orientasi baik terhadap diri sendiri</p>
+                            </div>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center">
+                            <p class="font-semibold">3</p>
+                            <p class="font-semibold">2</p>
+                            <p class="font-semibold">1</p>
+                        </td>
+                        <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8 h-20"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8 h-20"></td> -->
+                        <script>
+                            for (var i = 0; i < 6; i++) {
+                                var borderClass = (i === 6 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-20"></td>');
+                            }
+                        </script>
                     </tr>
-                    <tr>
-                        <td rowspan="4" colspan="5" class="text-xs border-x border-black align-top">Lupa akan
-                            keterbatasan/pelupa</td>
-                        <td rowspan="4" class="border-x border-black align-top">15</td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
+
+                    <!-- faktor lingkungan -->
+                    <tr class="border-t border-black">
+                        <td class="border-r border-black text-sm font-semibold align-top">
+                            <p class="p-1">Faktor Lingkungan</p>
+                        </td>
+                        <td class="border-x border-black font-semibold px-2">
+                            <div class="flex-row text-sm">
+                                <p class="font-semibold">Riwayat jatuh / bayi diletakkan di tempat tidur dewasa</p>
+                                <p class="font-semibold">Pasien menggunakan alat bantu / bayi diletakkan di dalam tempat
+                                    tidur bayi / perabot rumah</p>
+                                <p class="font-semibold">Pasien diletakkan ditempat tidur</p>
+                                <p class="font-semibold">Area diluar rumah sakit</p>
+                            </div>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-top">
+                            <p class="font-semibold">4</p>
+                            <p class="font-semibold">3</p>
+                            <p class="font-semibold">2</p>
+                            <p class="font-semibold">1</p>
+                        </td>
+                        <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8 h-24"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8 h-24"></td> -->
+                        <script>
+                            for (var i = 0; i < 6; i++) {
+                                var borderClass = (i === 6 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-24"></td>');
+                            }
+                        </script>
                     </tr>
-                    <tr>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
+
+                    <!-- respon -->
+                    <tr class="border-t border-black">
+                        <td class="border-r border-black align-top">
+                            <div class="text-sm font-semibold">
+                                <p class="p-1">Respon terhadap :<br>Pembedahan sedasi/ anestesi</p>
+                                <p class="px-1 mt-7">Pengunaan medika mentosa</p>
+                            </div>
+                        </td>
+                        <td class="border-x border-black font-semibold px-2">
+                            <div class="flex-row text-xs">
+                                <p class="font-semibold">Dalam 24 jam</p>
+                                <p class="font-semibold">Dalam 48 jam</p>
+                                <p class="font-semibold mb-6">>48 jam atau tidak menjalani pembedahan / sedasi /
+                                    anestesi</p>
+                                <p class="font-semibold">Penggunaan multiple: sedative, ote hypnosis, barbiturate,
+                                    fenotiazin, antidepresan, pencahar, diuretik, narkose</p>
+                                <p class="font-semibold">Penggunaan salah satu obat diatas</p>
+                                <p class="font-semibold">Penggunaan medikasi lainnya / tidak ada medikasi</p>
+                            </div>
+                        </td>
+                        <td class="border-x border-black font-semibold text-center align-top">
+                            <p class="font-semibold">3</p>
+                            <p class="font-semibold">2</p>
+                            <p class="font-semibold">1</p>
+                            <p class="font-semibold">3</p>
+                            <p class="font-semibold">2</p>
+                            <p class="font-semibold">1</p>
+                        </td>
+                        <!-- layout html
+                        <td class="border-x border-black"><input type="text" class="w-8 h-36"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8 h-36"></td> -->
+                        <script>
+                            for (var i = 0; i < 6; i++) {
+                                var borderClass = (i === 6 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8 h-36"></td>');
+                            }
+                        </script>
                     </tr>
-                    <tr>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                    </tr>
-                    <tr class="border-b border-black">
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                    </tr>
+
                     <!-- total skor -->
-                    <tr class="border border-black">
-                        <td colspan="9" class="uppercase font-bold">Total Skor</td>
+                    <tr class="border-y border-black">
+                        <td colspan="3" class="uppercase font-bold px-1">Total Skor</td>
+                        <!-- layout html
                         <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8"></td> -->
+                        <script>
+                            for (var i = 0; i < 6; i++) {
+                                var borderClass = (i === 6 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                            }
+                        </script>
                     </tr>
                     <!-- nilai skor -->
-                    <tr class="border border-black">
-                        <td colspan="9" class="font-bold">Nilai Skor (RR/RS/RT)</td>
+                    <tr class="border-y border-black">
+                        <td colspan="3" class="font-bold px-1">Nilai Skor (RR/RS/RT)</td>
+                        <!-- layout html
                         <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8"></td> -->
+                        <script>
+                            for (var i = 0; i < 6; i++) {
+                                var borderClass = (i === 6 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                            }
+                        </script>
                     </tr>
                     <!-- nama perawat -->
-                    <tr class="border border-black">
-                        <td colspan="8" class="font-bold">Nama Perawat (Inisial)</td>
+                    <tr class="border-y border-black">
+                        <td colspan="2" class="font-bold px-1">Nama Perawat (Inisial)</td>
+                        <td class="border-x border-black"><input type="text" class="w-20"></td>
+                        <!-- layout html
                         <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8"></td> -->
+                        <script>
+                            for (var i = 0; i < 6; i++) {
+                                var borderClass = (i === 6 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                            }
+                        </script>
                     </tr>
                     <!-- paraf -->
-                    <tr class="border border-black">
-                        <td colspan="8" class="font-bold">Paraf</td>
+                    <tr class="border-t border-black">
+                        <td colspan="2" class="font-bold">Paraf</td>
+                        <td class="border-x border-black"><input type="text" class="w-20"></td>
+                        <!-- layout html
                         <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
-                        <td class="border-x border-black"><input type="text" class="w-8"></td>
+                        jika berada di cols terakhir
+                        <td class="border-l border-black"><input type="text" class="w-8"></td> -->
+                        <script>
+                            for (var i = 0; i < 6; i++) {
+                                var borderClass = (i === 6 - 1) ? 'border-l' : 'border-x';
+                                document.write('<td class="' + borderClass + ' border-black"><input type="text" class="w-8"></td>');
+                            }
+                        </script>
                     </tr>
                 </tbody>
             </table>
-        </section>
-        <section class="border border-black col-span-2">
-            <p class="text-center font-bold uppercase">Asesmen risiko jatuh morse fall scale <br> pada pasien dewasa
-                usia > 12 sampai usia 65 tahun</p>
-            <p>Keterangan :</p>
-            <div class="grid grid-cols-2">
-                <p>1. Risiko Rendah</p>
-                <p>: 0 - 24</p>
-                <p class="col-start-1">2. Risiko Sedang</p>
-                <p>: 25 - 44</p>
-                <p class="col-start-1">3. Risiko Tinggi</p>
-                <p>: &ge; 44</p>
-            </div>
-        </section>
-        <section class="border border-black col-span-5">
-            <p class="text-center font-bold uppercase">Asesmen risiko jatuh morse fall scale <br> pada pasien dewasa
-                usia > 12 sampai usia 65 tahun</p>
-            <p>Keterangan :</p>
-            <div class="grid grid-cols-2">
-                <p>1. Risiko Rendah</p>
-                <p>: 0 - 24</p>
-                <p class="col-start-1">2. Risiko Sedang</p>
-                <p>: 25 - 44</p>
-                <p class="col-start-1">3. Risiko Tinggi</p>
-                <p>: &ge; 44</p>
-            </div>
         </section>
     </main>
 </body>
