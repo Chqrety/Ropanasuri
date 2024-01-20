@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropanasuri | Rekapitulasi Tindakan Pelayanan Pasien</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body class="p-9">
+    <header class="flex items-center pl-10 pb-7 gap-x-5">
+        <img src="/img/logo.png" alt="" class="w-24 h-24 object-contain">
+        <span class="font-bold text-3xl text-center w-full uppercase">Rekapitulasi Tindakan Pelayanan Pasien</span>
+    </header>
+
+    <main>
+        <section>
+            <div class="grid grid-cols-2 gap-x-4 w-fit pb-5">
+                <p class="font-semibold">Tanggal Masuk/Jam</p>
+                <p class="font-semibold">: ............................</p>
+                <p class="font-semibold">Tanggal Keluar/Jam</p>
+                <p class="font-semibold">: ............................</p>
+                <p class="font-semibold">Dokter Yang Mengirim</p>
+                <p class="font-semibold">: ............................</p>
+            </div>
+            <table class="w-full">
+                <thead>
+                    <tr class="text-center font-semibold uppercase">
+                        <td rowspan="2" class="border border-black w-1">
+                            <p class="px-2">No.</p>
+                        </td>
+                        <td rowspan="2" class="border border-black">
+                            <p>Tanggal</p>
+                        </td>
+                        <td rowspan="2" class="border border-black">
+                            <p>Lab</p>
+                        </td>
+                        <td colspan="2" class="border border-black">
+                            <p>Rontgent</p>
+                        </td>
+                        <td rowspan="2" class="border border-black">
+                            <p>ECG</p>
+                        </td>
+                        <td rowspan="2" class="border border-black">
+                            <p>Tindakan</p>
+                        </td>
+                        <td colspan="2" class="border border-black">
+                            <p>Konsul</p>
+                        </td>
+                        <td rowspan="2" class="border border-black">
+                            <p>Pa</p>
+                        </td>
+                        <td rowspan="2" class="border border-black">
+                            <p>Oksigen (O<sub>2</sub>)</p>
+                        </td>
+                        <td rowspan="2" class="border border-black">
+                            <p>Lain - Lain</p>
+                        </td>
+                    </tr>
+                    <tr class="font-semibold text-center">
+                        <td class="border border-black">
+                            <p>Jenis Tindakan</p>
+                        </td>
+                        <td class="border border-black">
+                            <p>Biaya</p>
+                        </td>
+                        <td class="border border-black">
+                            <p>Dokter</p>
+                        </td>
+                        <td class="border border-black">
+                            <p>Biaya</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- layout html
+                    <td class="border border-black"><input type="text" class="w-full"></td> -->
+                    <script>
+                        for (var j = 0; j < 12; j++) {
+                            document.write('<tr>');
+
+                            for (var i = 0; i < 12; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+
+                            document.write('</tr>');
+                        }
+                    </script>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
