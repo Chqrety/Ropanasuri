@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropanasuri | Checklist Rencana Pulang</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body class="p-9">
+    <header class="flex gap-3 items-center pl-10 pb-7 gap-x-5">
+        <img src="/img/logo.png" alt="" class="w-24 h-24 object-contain">
+        <span class="font-bold text-3xl text-center w-full uppercase">Checklist Rencana Pulang <br>
+            <span class="italic">(Discharge Planning)</span></span>
+    </header>
+
+    <main>
+        <section>
+            <table class="w-full">
+                <thead>
+                    <tr class="font-bold uppercase border-y border-black">
+                        <td colspan="2" class="border-x border-black p-1">Tata laksana gizi pasien dirumah</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-y border-black">
+                        <td class="border-x border-black w-1/2 pl-10">
+                            <p class="font-bold uppercase">Diet</p>
+                            <div class="flex pl-3 gap-x-5">
+                                <input type="checkbox">
+                                <p>Anjuran Pola Makan</p>
+                            </div>
+                            <div class="flex pl-3 gap-x-5">
+                                <input type="checkbox">
+                                <p>Makanan Yang Perlu Dihindari</p>
+                            </div>
+                        </td>
+                        <td class="border-x border-black w-1/2">
+                            <input type="text" class="w-full h-20">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="w-full">
+                <thead class="font-bold uppercase">
+                    <tr class="border-b border-black">
+                        <td colspan="6" class="border-x border-black p-1">Pemberian Obat Pulang</td>
+                    </tr>
+                    <tr class="border-b border-black">
+                        <td colspan="6" class="border-x border-black text-center p-2">Daftar Nama obat - obatan</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="border-x border-black px-3">No.</td>
+                        <td class="border-x border-black w-3/12">Nama obat</td>
+                        <td class="border-x border-black w-1/12">Indikasi</td>
+                        <td class="border-x border-black w-1/12">Dosis</td>
+                        <td class="border-x border-black w-2/12">Waktu Pemberian</td>
+                        <td class="border-x border-black w-5/12">Cara Pemberian Obat</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var j = 0; j < 18; j++) {
+                                document.write('<tr>');
+
+                                for (var i = 0; i < 6; i++) {
+                                    document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                                }
+
+                                document.write('</tr>');
+                            }
+                        </script>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <div class="grid grid-cols-3 grid-rows-5 justify-items-center font-semibold pt-5">
+                <p class="col-span-3 justify-self-start pb-5">Instruksi Rencana Pemulangan Pasien ini telah dijelaskan
+                    kepada pasien dan / atau keluarga
+                </p>
+                <div>
+                    <p>Telah dibaca dan dimengerti</p>
+                </div>
+                <div>
+                    <p>Farmasi Klinis</p>
+                </div>
+                <div>
+                    <p>Dietisien</p>
+                </div>
+                <div class="row-start-5">
+                    (<input type="text" placeholder="....................................................">)
+                    <p>Nama Jelas pasien / keluarga</p>
+                </div>
+                <div class="row-start-5">
+                    (<input type="text" placeholder="....................................................">)
+                </div>
+                <div class="row-start-5">
+                    (<input type="text" placeholder="....................................................">)
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.dotted-input').forEach(function (element) {
+            element.placeholder = Array(60).fill('....').join('');
+        });
+    </script>
+</body>
+
+</html>
