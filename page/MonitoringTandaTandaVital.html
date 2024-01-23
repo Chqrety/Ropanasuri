@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropanasuri | Monitoring Tanda Tanda Vital</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <style>
+        .vertical-text {
+            writing-mode: vertical-lr;
+            rotate: 180deg;
+        }
+    </style>
+</head>
+
+<body class="p-9">
+    <header class="flex gap-3 items-center pl-10 pb-7 gap-x-5">
+        <img src="/img/logo.png" alt="" class="w-24 h-24 object-contain">
+        <span class="font-bold text-3xl text-center w-full uppercase">Monitoring Tanda Tanda Vital (TTV)</span>
+    </header>
+
+    <main>
+        <section>
+            <table class="w-full font-semibold">
+                <thead>
+                    <tr>
+                        <td colspan="4" class="border border-black px-1 w-1/6">
+                            <span class="uppercase">Tanggal</span>
+                        </td>
+                        <div class="w-5/6">
+                            <!-- layout html
+                            <td class="border border-black"><input type="text" class="w-full"></td> -->
+                            <script>
+                                for (var i = 0; i < 15; i++) {
+                                    document.write('<td colspan="3" class="border border-black"><input type="text" class="w-full"></td>');
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="border border-black px-1">
+                            <span>Hari Rawat ke</span>
+                        </td>
+                        <td colspan="45" class="border border-black">
+                            <input type="text" class="w-full">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="border border-black px-1">
+                            <span>Tindakan</span>
+                        </td>
+                        <td colspan="45" class="border border-black">
+                            <input type="text" class="w-full">
+                        </td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="border border-black ">
+                            <span class="text-xs">TO <br> &or; <br> &and;</span>
+                        </td>
+                        <td class="flex-row border border-black">
+                            <span class="text-xs">RR</span>
+                            <span class="">&middot;</span>
+                        </td>
+                        <td class="flex-row border border-black">
+                            <span class="text-xs">HR</span>
+                            <span class="">&middot;</span>
+                        </td>
+                        <td class="flex-row border border-black">
+                            <span class="text-xs">T</span>
+                            <span class="">&middot;</span>
+                        </td>
+                        <!-- layout html -->
+                        <!-- <td class="border border-black w-10"><span>9</span></td>
+                        <td class="border border-black w-10"><span>15</span></td>
+                        <td class="border border-black w-10"><span>21</span></td> -->
+                        <script>
+                            for (var i = 0; i < 15; i++) {
+                                document.write('<td class="border border-black w-10"><span>9</span></td>');
+                                document.write('<td class="border border-black w-10"><span>15</span></td>');
+                                document.write('<td class="border border-black w-10"><span>21</span></td>');
+                            }
+                        </script>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center text-xs">
+                        <td class="border border-black">
+                            <span>300</span>
+                        </td>
+                        <td class="border border-black">
+                            <span">60</span>
+                        </td>
+                        <td class="border border-black">
+                            <span>160</span>
+                        </td>
+                        <td class="border border-black">
+                            <span>41</span>
+                        </td>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr class="text-center text-xs align-bottom">
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>250</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span">50</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>140</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>40</span>
+                        </td>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr class="text-center text-xs align-bottom">
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>200</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span">40</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>120</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>39</span>
+                        </td>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr class="text-center text-xs align-bottom">
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>150</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span">30</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>100</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>38</span>
+                        </td>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr class="text-center text-xs align-bottom">
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>100</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span">20</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>80</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>37</span>
+                        </td>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr class="text-center text-xs align-bottom">
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>50</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span">10</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>60</span>
+                        </td>
+                        <td rowspan="5" class="border border-black p-1">
+                            <span>36</span>
+                        </td>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr class="text-center text-xs align-bottom">
+                        <td rowspan="4" class="border border-black p-1">
+                            <span>0</span>
+                        </td>
+                        <td rowspan="4" class="border border-black p-1">
+                            <span">0</span>
+                        </td>
+                        <td rowspan="4" class="border border-black p-1">
+                            <span>40</span>
+                        </td>
+                        <td rowspan="4" class="border border-black p-1">
+                            <span>35</span>
+                        </td>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr class="text-sm align-bottom">
+                        <td colspan="4" class="border border-black">
+                            <span>Nama Perawat</span>
+                        </td>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr class="text-md align-bottom">
+                        <td colspan="4" class="border border-black">
+                            <span class="uppercase font-bold">Redressing</span>
+                        </td>
+                        <!-- layout html -->
+                        <!-- <td class="border border-black w-10"><span>9</span></td>
+                        <td class="border border-black w-10"><span>15</span></td>
+                        <td class="border border-black w-10"><span>21</span></td> -->
+                        <script>
+                            for (var i = 0; i < 15; i++) {
+                                document.write('<td colspan="3" class="border border-black w-10"><span></span></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="border border-black"><input type="text" class="w-full"></td>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="border border-black"><input type="text" class="w-full"></td>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="border border-black"><input type="text" class="w-full"></td>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="border border-black"><input type="text" class="w-full"></td>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="border border-black"><input type="text" class="w-full"></td>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="border border-black"><input type="text" class="w-full"></td>
+                        <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                        <script>
+                            for (var i = 0; i < 45; i++) {
+                                document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                            }
+                        </script>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <table class="w-full">
+                <thead>
+                    <tr>
+                        <td colspan="14" class="border-b border-x border-black px-2">
+                            <span class="font-bold uppercase">balanace cairan</span>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="10" class="border border-black">
+                            <span class="vertical-text font-bold uppercase px-2">masuk/intake</span>
+                        </td>
+                        <td class="border border-black w-1/6 text-center">
+                            <span class="font-semibold">Minum</span>
+                        </td>
+                        <div class="w-5/6">
+                            <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                            <script>
+                                for (var i = 0; i < 12; i++) {
+                                    document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td class="border border-black w-1/6 text-center">
+                            <span class="font-semibold">MC</span>
+                        </td>
+                        <div class="w-5/6">
+                            <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                            <script>
+                                for (var i = 0; i < 12; i++) {
+                                    document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td class="border border-black w-1/6 text-center">
+                            <span class="font-semibold">infus</span>
+                        </td>
+                        <div class="w-5/6">
+                            <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                            <script>
+                                for (var i = 0; i < 12; i++) {
+                                    document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td class="border border-black w-1/6 text-center">
+                            <span class="font-semibold">total shift</span>
+                        </td>
+                        <div class="w-5/6">
+                            <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                            <script>
+                                for (var i = 0; i < 12; i++) {
+                                    document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td class="border border-black w-1/6 text-center">
+                            <span class="font-semibold">per 24 jam</span>
+                        </td>
+                        <div class="w-5/6">
+                            <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                            <script>
+                                for (var i = 0; i < 12; i++) {
+                                    document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td class="border border-black w-1/6 text-center">
+                            <span class="font-semibold">urine/cath</span>
+                        </td>
+                        <div class="w-5/6">
+                            <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                            <script>
+                                for (var i = 0; i < 12; i++) {
+                                    document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td class="border border-black w-1/6 text-center">
+                            <span class="font-semibold">NGT</span>
+                        </td>
+                        <div class="w-5/6">
+                            <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                            <script>
+                                for (var i = 0; i < 12; i++) {
+                                    document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td class="border border-black w-1/6 text-center">
+                            <span class="font-semibold">drain</span>
+                        </td>
+                        <div class="w-5/6">
+                            <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                            <script>
+                                for (var i = 0; i < 12; i++) {
+                                    document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td class="border border-black w-1/6 text-center">
+                            <span class="font-semibold">total shift</span>
+                        </td>
+                        <div class="w-5/6">
+                            <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                            <script>
+                                for (var i = 0; i < 12; i++) {
+                                    document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td class="border border-black w-1/6 text-center">
+                            <span class="font-semibold">per 24 jam</span>
+                        </td>
+                        <div class="w-5/6">
+                            <!-- layout html
+                        <td class="border border-black"><input type="text" class="w-full"></td> -->
+                            <script>
+                                for (var i = 0; i < 12; i++) {
+                                    document.write('<td class="border border-black"><input type="text" class="w-full"></td>');
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
