@@ -584,6 +584,10 @@ video {
   grid-column: span 5 / span 5;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -955,6 +959,10 @@ video {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
+.grid-cols-\[auto\] {
+  grid-template-columns: auto;
+}
+
 .grid-rows-6 {
   grid-template-rows: repeat(6, minmax(0, 1fr));
 }
@@ -967,6 +975,10 @@ video {
   grid-template-rows: repeat(5, minmax(0, 1fr));
 }
 
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -977,6 +989,10 @@ video {
 
 .place-items-center {
   place-items: center;
+}
+
+.content-between {
+  align-content: space-between;
 }
 
 .items-center {
@@ -1049,6 +1065,10 @@ video {
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
+}
+
+.gap-y-3 {
+  row-gap: 0.75rem;
 }
 
 .justify-self-start {
@@ -1271,6 +1291,16 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.px-96 {
+  padding-left: 24rem;
+  padding-right: 24rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-2 {
